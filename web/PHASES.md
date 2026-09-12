@@ -218,5 +218,5 @@ Canonical plan: `D:\\music\\PLAN.md`
 - SECURITY/REGRESSION CHECK: No service-role, provider or token values in config; package versions are lockfile-pinned.
 - CODE REVIEW: Confirmed F1.1 only adds CLI/config foundation and does not create `supabase/schemas` or hand-edit a database.
 - DEVIATIONS: Docker/local service startup intentionally not attempted in this phase; it is F1.2.
-- GIT COMMIT/PUSH: Pending this phase commit.
+- GIT COMMIT/PUSH: `46f7f4a` pushed to `origin/codex/g0-foundation`; local Supabase ignore file is included in the follow-up housekeeping commit.
 - NEXT PHASE: F1.2 — Docker runtime + Supabase Local start.
