@@ -32,8 +32,8 @@ Canonical plan: `D:\\music\\PLAN.md`
 | G0.14 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
 | G0.15 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
 | G0.16 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
-| F1.1 | PASS | 2026-09-12 | — | Supabase CLI 2.117.0 pinned; init/config verified |
-| F1.2 | TODO | 2026-09-12 | — | Not started — Docker runtime + Supabase Local start |
+| F1.1 | PASS | 2026-09-12 | 98667ef | Supabase CLI 2.117.0 pinned; init/config verified |
+| F1.2 | FAIL | 2026-09-12 | — | HARD EXTERNAL BLOCKER: Docker/Podman unavailable; resume after runtime is installed and started |
 | F1.3 | TODO | 2026-09-12 | — | Not started — Tạo migration baseline rỗng có chủ đích |
 | F1.4 | TODO | 2026-09-12 | — | Not started — Tạo schema private và extension |
 | F1.5 | TODO | 2026-09-12 | — | Not started — Seed framework |
@@ -220,3 +220,20 @@ Canonical plan: `D:\\music\\PLAN.md`
 - DEVIATIONS: Docker/local service startup intentionally not attempted in this phase; it is F1.2.
 - GIT COMMIT/PUSH: `46f7f4a` pushed to `origin/codex/g0-foundation`; local Supabase ignore file is included in the follow-up housekeeping commit.
 - NEXT PHASE: F1.2 — Docker runtime + Supabase Local start.
+
+### F1.2 — FAIL / HARD EXTERNAL BLOCKER report
+
+- PHASE: F1.2 — Docker runtime + Supabase Local start
+- STATUS: FAIL (hard external blocker; project is not complete)
+- SKILLS LOADED: supabase (CLI/local runtime workflow); executing-plans (phase continuation); systematic-debugging (evidence-first external prerequisite diagnosis); verification-before-completion (no PASS without fresh evidence).
+- FILES READ: `D:\\agent\\README.md`, Supabase skill, `web\\supabase\\config.toml`, `web\\PHASES.md`.
+- FILES CHANGED: `web\\PHASES.md` only.
+- IMPLEMENTATION: No application or database implementation was attempted because the required local container runtime is unavailable.
+- AUDIT COMMANDS: `docker version`; `Get-Command docker,winget,choco,scoop`; `Get-Service com.docker.service`; `npx supabase start`.
+- AUDIT RESULTS: `docker`, `winget`, `choco`, `scoop`, and the Docker service are absent. `npx supabase start` exits 1 with `LegacyDockerLifecycleInspectError: failed to inspect container health: docker: command not found (podman also not found) — install Docker Desktop or Podman and ensure it is on PATH`.
+- SECURITY/REGRESSION CHECK: No source, migration, dependency or secret changes in this phase; prior working tree was clean before the tracker update.
+- CODE REVIEW: Confirmed the blocker is environmental and cannot be resolved by changing project code or bypassing Supabase local verification.
+- DEVIATIONS: Execution stops only at the plan-authorized hard external blocker. No phase after F1.2 is being marked PASS.
+- GIT COMMIT/PUSH: Safe checkpoint pending this report commit.
+- RESUME FROM: F1.2.
+- USER ACTION REQUIRED: Install and start Docker Desktop (or Podman) and ensure its CLI is available on PATH.
