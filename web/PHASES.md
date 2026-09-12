@@ -4,47 +4,34 @@ Canonical plan: `D:\\music\\PLAN.md`
 
 | Phase | Status | Date | Commit/tag | Evidence |
 | --- | --- | --- | --- | --- |
-| B-1.1 | TODO | 2026-09-12 | — | Not started — Đọc Universal Agent Bootstrap |
-| B-1.2 | TODO | 2026-09-12 | — | Not started — Đọc MANIFEST và lập skill inventory cho project |
-| B-1.3 | TODO | 2026-09-12 | — | Not started — Đọc project AGENTS.md |
-| B-1.4 | TODO | 2026-09-12 | — | Not started — Đọc plan canonical toàn bộ |
-| B-1.5 | TODO | 2026-09-12 | — | Not started — Inspect repo và isolation |
-| B-1.6 | TODO | 2026-09-12 | — | Not started — Chọn skill theo current phase |
-| B-1.7 | TODO | 2026-09-12 | — | Not started — Lập phase execution contract |
-| B-1.8 | TODO | 2026-09-12 | — | Not started — Bootstrap gate |
-| B-2.1 | TODO | 2026-09-12 | — | Not started — Xác nhận TASK thật sự là toàn bộ project |
-| B-2.2 | TODO | 2026-09-12 | — | Not started — Khóa phase loop tự động |
-| B-2.3 | TODO | 2026-09-12 | — | Not started — Khóa stop conditions |
-| B-2.4 | TODO | 2026-09-12 | — | Not started — Resume/checkpoint contract |
-| B-1.1 | TODO | 2026-09-12 | — | Not started — Đọc Universal Agent Bootstrap |
-| B-1.2 | TODO | 2026-09-12 | — | Not started — Đọc MANIFEST và lập skill inventory cho project |
-| B-1.3 | TODO | 2026-09-12 | — | Not started — Đọc project AGENTS.md |
-| B-1.4 | TODO | 2026-09-12 | — | Not started — Đọc plan canonical toàn bộ |
-| B-1.5 | TODO | 2026-09-12 | — | Not started — Inspect repo và isolation |
-| B-1.6 | TODO | 2026-09-12 | — | Not started — Chọn skill theo current phase |
-| B-1.7 | TODO | 2026-09-12 | — | Not started — Lập phase execution contract |
-| B-1.8 | TODO | 2026-09-12 | — | Not started — Bootstrap gate |
-| B-2.1 | TODO | 2026-09-12 | — | Not started — Xác nhận TASK thật sự là toàn bộ project |
-| B-2.2 | TODO | 2026-09-12 | — | Not started — Khóa phase loop tự động |
-| B-2.3 | TODO | 2026-09-12 | — | Not started — Khóa stop conditions |
-| B-2.4 | TODO | 2026-09-12 | — | Not started — Resume/checkpoint contract |
-
-+| G0.1 | TODO | 2026-09-12 | — | Not started — Khóa scope MVP và anti-scope-creep |
-| G0.2 | TODO | 2026-09-12 | — | Not started — Khóa source-of-truth database |
-| G0.3 | TODO | 2026-09-12 | — | Not started — Khóa quy tắc Git an toàn |
-| G0.4 | TODO | 2026-09-12 | — | Not started — Tạo PHASES tracker chuẩn |
-| G0.5 | TODO | 2026-09-12 | — | Not started — Tạo mẫu báo cáo lỗi |
-| G0.6 | TODO | 2026-09-12 | — | Not started — Kiểm kê toolchain Windows và prerequisite local stack |
-| G0.7 | TODO | 2026-09-12 | — | Not started — Khóa Node và package manager |
-| G0.8 | TODO | 2026-09-12 | — | Not started — Tạo Next.js app |
-| G0.9 | TODO | 2026-09-12 | — | Not started — Khóa đường dẫn src |
-| G0.10 | TODO | 2026-09-12 | — | Not started — Tạo CI nền |
-| G0.11 | TODO | 2026-09-12 | — | Not started — Khóa env separation |
-| G0.12 | TODO | 2026-09-12 | — | Not started — Foundation checkpoint |
-| G0.13 | TODO | 2026-09-12 | — | Not started — Xác minh GitHub `vinh17491/music` + origin + quyền push |
-| G0.14 | TODO | 2026-09-12 | — | Not started — Khóa branch-per-phase policy |
-| G0.15 | TODO | 2026-09-12 | — | Not started — Auto commit + push sau PASS |
-| G0.16 | TODO | 2026-09-12 | — | Not started — Recovery checkpoint drill |
+| B-1.1 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| B-1.2 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| B-1.3 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| B-1.4 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| B-1.5 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| B-1.6 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| B-1.7 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| B-1.8 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| B-2.1 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| B-2.2 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| B-2.3 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| B-2.4 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| G0.1 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| G0.2 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| G0.3 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| G0.4 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| G0.5 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| G0.6 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| G0.7 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| G0.8 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| G0.9 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| G0.10 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| G0.11 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| G0.12 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| G0.13 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| G0.14 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| G0.15 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
+| G0.16 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
 | F1.1 | TODO | 2026-09-12 | — | Not started — Pin Supabase CLI trong project + init |
 | F1.2 | TODO | 2026-09-12 | — | Not started — Docker runtime + Supabase Local start |
 | F1.3 | TODO | 2026-09-12 | — | Not started — Tạo migration baseline rỗng có chủ đích |
@@ -193,6 +180,27 @@ Canonical plan: `D:\\music\\PLAN.md`
 | Z7.6 | TODO | 2026-09-12 | — | Not started — Release tag |
 | Z7.7 | TODO | 2026-09-12 | — | Not started — Demo rehearsal |
 | Z7.8 | TODO | 2026-09-12 | — | Not started — Final 100/100 declaration |
+
 ## Phase reports
 
-Each PASS/FAIL report records skills loaded, files read/changed, implementation, audit commands/results, security/regression check, code review, deviations, Git commit/push, and next phase.
+### B-1 / B-2 / G0 — PASS report
+
+- PHASE: B-1.1 through B-2.4, G0.1 through G0.16
+- STATUS: PASS
+- SKILLS LOADED: executing-plans (canonical plan loop); using-git-worktrees (root/branch isolation); systematic-debugging (build hang investigation); test-driven-development (required implementation discipline); verification-before-completion (fresh evidence gate).
+- FILES READ: `D:\\agent\\README.md`, `D:\\agent\\MANIFEST.md`, `D:\\music\\PLAN.md`, `D:\\music\\AGENTS.md`, generated `web\\AGENTS.md`, and local project inventory.
+- FILES CHANGED: root project instructions/decisions/readme/gitignore, `.nvmrc`, CI workflow, `web` Next.js scaffold, env example/local placeholder, error template, and phase tracker.
+- IMPLEMENTATION: Established the public-source/private-runtime scope, migration-only database policy, 176-entry tracker, failure-report contract, Node 24/npm pin, Next 16.3.5 App Router scaffold, CI baseline, and ignored local env handling.
+- AUDIT COMMANDS: `node -v`; `npm -v`; `git --version`; `gh --version`; `docker version`; `npm run typecheck`; `npm run lint`; `npm run build`; dev-server smoke request to `http://127.0.0.1:3000/`; tracker count comparison; `gh auth status --active --hostname github.com`; `gh repo view vinh17491/music`; `git fetch origin --prune`; recovery branch drill.
+- AUDIT RESULTS: Node `v24.20.0`, npm `11.19.0`, Git `2.55.0`, GitHub CLI `2.98.0`, typecheck/lint/build PASS, local HTTP 200, tracker contains 176 plan phase rows, GitHub account `vinh17491` and PUBLIC repo verified, origin fetch PASS, recovery drill PASS. Docker command is unavailable and is explicitly deferred to F1.2.
+- SECURITY/REGRESSION CHECK: `.env.local` is ignored; no secret values committed; source/runtime privacy decisions recorded; Next dependency upgraded from vulnerable 16.0.0 scaffold to patched 16.3.5 after npm audit warning.
+- CODE REVIEW: Reviewed staged file list and build output; no nested `.git`; application code is under `web/src`; `.agents` remains ignored and untouched.
+- DEVIATIONS: No architecture deviation. Docker prerequisite pending F1.2. Generated `web/AGENTS.md`/`web/CLAUDE.md` retained because Next 16.3.5 generated them during dev and `web/AGENTS.md` is applicable project guidance.
+- GIT COMMIT/PUSH: foundation `fedf882` pushed to `origin/codex/g0-foundation`; recovery drill checkpoint `0152dca` was created on a temporary local branch and safely removed after verification.
+- NEXT PHASE: F1.1 — Pin Supabase CLI in project + init.
+
+### Error investigation note — G0.8 build verification
+
+- Symptom: initial chained audit appeared stalled at `npm run lint` and a subsequent build reported an existing Next build lock.
+- Root cause: the generated `lint` script invoked ESLint without a path, causing an unnecessarily broad scan; the first audit chain continued into build after the process was interrupted.
+- Fix/regression: scoped the script to `eslint src`, reran `npm run typecheck; npm run lint; npm run build` successfully, and verified a dev smoke request returned HTTP 200.
