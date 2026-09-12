@@ -32,7 +32,7 @@ Canonical plan: `D:\\music\\PLAN.md`
 | G0.14 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
 | G0.15 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
 | G0.16 | PASS | 2026-09-12 | fedf882 / 0152dca | Verified foundation evidence |
-| F1.1 | TODO | 2026-09-12 | — | Not started — Pin Supabase CLI trong project + init |
+| F1.1 | PASS | 2026-09-12 | — | Supabase CLI 2.117.0 pinned; init/config verified |
 | F1.2 | TODO | 2026-09-12 | — | Not started — Docker runtime + Supabase Local start |
 | F1.3 | TODO | 2026-09-12 | — | Not started — Tạo migration baseline rỗng có chủ đích |
 | F1.4 | TODO | 2026-09-12 | — | Not started — Tạo schema private và extension |
@@ -204,3 +204,19 @@ Canonical plan: `D:\\music\\PLAN.md`
 - Symptom: initial chained audit appeared stalled at `npm run lint` and a subsequent build reported an existing Next build lock.
 - Root cause: the generated `lint` script invoked ESLint without a path, causing an unnecessarily broad scan; the first audit chain continued into build after the process was interrupted.
 - Fix/regression: scoped the script to `eslint src`, reran `npm run typecheck; npm run lint; npm run build` successfully, and verified a dev smoke request returned HTTP 200.
+
+### F1.1 — PASS report
+
+- PHASE: F1.1 — Pin Supabase CLI in project + init
+- STATUS: PASS
+- SKILLS LOADED: supabase (current CLI workflow and `--help` discovery); supabase-postgres-best-practices (database source-of-truth guard); database-migrations (migration-only boundary); executing-plans; verification-before-completion.
+- FILES READ: Supabase skill, Supabase CLI official reference, `web/package.json`, `web/supabase/config.toml`.
+- FILES CHANGED: `web/package.json`, `web/package-lock.json`, `web/supabase/config.toml`, `web/PHASES.md`.
+- IMPLEMENTATION: Added exact dev dependency `supabase@2.117.0` and initialized the project-local CLI config without secrets or declarative schema paths.
+- AUDIT COMMANDS: `npm ls supabase --depth=0`; `npx supabase --version`; `npx supabase init --help`; `npx supabase init`; config inspection; `git diff --check`.
+- AUDIT RESULTS: CLI reports `2.117.0`; help and init completed successfully; `config.toml` exists with migration mode (`schema_paths = []`) and no secret values; npm audit reports 0 vulnerabilities.
+- SECURITY/REGRESSION CHECK: No service-role, provider or token values in config; package versions are lockfile-pinned.
+- CODE REVIEW: Confirmed F1.1 only adds CLI/config foundation and does not create `supabase/schemas` or hand-edit a database.
+- DEVIATIONS: Docker/local service startup intentionally not attempted in this phase; it is F1.2.
+- GIT COMMIT/PUSH: Pending this phase commit.
+- NEXT PHASE: F1.2 — Docker runtime + Supabase Local start.
