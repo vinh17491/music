@@ -1,0 +1,16 @@
+# Project-local agent library is workspace metadata, not application source.
+.agents/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Temporary verification output
+*.log
+.tmp/
